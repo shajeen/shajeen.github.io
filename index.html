@@ -1,44 +1,89 @@
-# Standard Template Library
+# Python Document
 
-##### STL contains Algorithm and containers. 
+Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. 
 
-- Algorithm and container are sperated in cpp so it can be reuse.
-- Iterators iterate each item in a container, algorithm do not know the container it is working on, only know about iterator. Which will increase code reuse.
-- Easily extendable, if i define new container with proper iterator interface it can use like exesting container.
-- Iterator is class it act just like pointer
+Python features a dynamic type system and automatic memory management and supports multiple programming paradigms, including object-oriented, imperative, functional programming, and procedural styles. It has a large and comprehensive standard library.
 
-###### Eg:  ( container and algorithm)
+##### Comments
 
-```c++
-using namespace std;
+single line comment
 
-// --- container ----
-vector<int> vec; // dynamic array that can grow
-vec.push_back(4); // append element end of the array
-vec.push_back(1); // sequece of the container define by push back
-
-vector<int>::iterator ite1 = vec.begin(); // point first elemt
-vector<int>::iterator ite2 = vec.end(); // point after last elemt
-
-// Warning: std::cout << *vec.end() <<; 
-// please dont use above line as it can cause application to crash
-
-for (vector<int>::iterator itr = ite1; itr!=ite2; ++itr)
-{
-  cout << *itr << "" ;
-}
-
-// --- Algorithm ----
-sort(ite1, ite2);
-// algorithm work only on iterator not container
+```python
+#single line comment
 ```
-###### Reason to use c++ standard librarry
 
-- Code reuse
-- Efficiency (fast and use less resourse)
-- Accurate, less buggy
-- Good readble code
-- Blueprint to write library
-- Standardization
-- Good knowledge of data structure and algorithm
+multi line comment
+
+```python
+'''
+This is multi line comment
+comment can be made multi line
+'''
+```
+
+##### Variables
+
+int, float, string, bool
+
+```python
+integer = 1
+floatval = 1.0
+string = 'This is string'
+boolval = True
+```
+
+##### Math
+
++, -, /, *, **, //, %
+
+```python
+a = 1 + 1 # add
+b = 1 - 1 # sub
+c = 1 / 1 # div
+d = 1 * 1 # mul
+e = 1 ** 1 # pow
+f = 1 // 1 # rounded div
+g = 1 % 1 # mod
+```
+
+##### String
+
+```python
+# string len
+string = "I am string"
+print (len(string)) # 11
+
+# print string in reverse
+for n in range(len(string)):
+    print(string[-(n+1)]) # g n i r t s m a I
+    
+# randome access
+print (string[1]) # I
+print (string[2:4]) # am
+print (string[4:]) # string
+print (string[:10]) # I am strin
+
+# add two string
+string = "Hello" + string
+print (string) #Hello I am string
+
+#format method
+print ('This {0} value is {1}'.format(50, 60)) # This 50 value is 60 
+print ('This {vehicle} is {0}'.format(156, vehicle = "BWM")) # This BWM is 156
+print ('price: {x}, {y}, {z}'.format(x=10, y=20, z=30)) # price: 10, 20, 30
+print ('{:b} binary'.format(21)) # 10101 binary
+print ('{:x} hex'.format(21)) # 15 hex
+print ('{:o} octal'.format(21)) # 25 octal
+print ('{:<20}'.format("left align")) #left align
+print ('{:>20}'.format("right align")) #           right align
+
+# special char
+print (r"c:\number\non") # c:\number\non
+print ("I`am 'V'e'r'y'") # I`am 'V'e'r'y'
+print ("""
+       Help:------------
+               Text here 
+       """) # Help:------------
+            #         Text here
+```
 
