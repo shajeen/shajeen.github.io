@@ -1,1 +1,44 @@
-Hello World
+# Standard Template Library
+
+##### STL contains Algorithm and containers. 
+
+- Algorithm and container are sperated in cpp so it can be reuse.
+- Iterators iterate each item in a container, algorithm do not know the container it is working on, only know about iterator. Which will increase code reuse.
+- Easily extendable, if i define new container with proper iterator interface it can use like exesting container.
+- Iterator is class it act just like pointer
+
+###### Eg:  ( container and algorithm)
+
+```c++
+using namespace std;
+
+// --- container ----
+vector<int> vec; // dynamic array that can grow
+vec.push_back(4); // append element end of the array
+vec.push_back(1); // sequece of the container define by push back
+
+vector<int>::iterator ite1 = vec.begin(); // point first elemt
+vector<int>::iterator ite2 = vec.end(); // point after last elemt
+
+// Warning: std::cout << *vec.end() <<; 
+// please dont use above line as it can cause application to crash
+
+for (vector<int>::iterator itr = ite1; itr!=ite2; ++itr)
+{
+  cout << *itr << "" ;
+}
+
+// --- Algorithm ----
+sort(ite1, ite2);
+// algorithm work only on iterator not container
+```
+###### Reason to use c++ standard librarry
+
+- Code reuse
+- Efficiency (fast and use less resourse)
+- Accurate, less buggy
+- Good readble code
+- Blueprint to write library
+- Standardization
+- Good knowledge of data structure and algorithm
+
