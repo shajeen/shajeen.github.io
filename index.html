@@ -1,89 +1,19 @@
-# Python Document
-
-Python is a widely used high-level programming language for general-purpose programming, created by Guido van Rossum and first released in 1991. 
-
-Python features a dynamic type system and automatic memory management and supports multiple programming paradigms, including object-oriented, imperative, functional programming, and procedural styles. It has a large and comprehensive standard library.
-
-##### Comments
-
-single line comment
-
-```python
-#single line comment
-```
-
-multi line comment
-
-```python
-'''
-This is multi line comment
-comment can be made multi line
-'''
-```
-
-##### Variables
-
-int, float, string, bool
-
-```python
-integer = 1
-floatval = 1.0
-string = 'This is string'
-boolval = True
-```
-
-##### Math
-
-+, -, /, *, **, //, %
-
-```python
-a = 1 + 1 # add
-b = 1 - 1 # sub
-c = 1 / 1 # div
-d = 1 * 1 # mul
-e = 1 ** 1 # pow
-f = 1 // 1 # rounded div
-g = 1 % 1 # mod
-```
-
-##### String
-
-```python
-# string len
-string = "I am string"
-print (len(string)) # 11
-
-# print string in reverse
-for n in range(len(string)):
-    print(string[-(n+1)]) # g n i r t s m a I
-    
-# randome access
-print (string[1]) # I
-print (string[2:4]) # am
-print (string[4:]) # string
-print (string[:10]) # I am strin
-
-# add two string
-string = "Hello" + string
-print (string) #Hello I am string
-
-#format method
-print ('This {0} value is {1}'.format(50, 60)) # This 50 value is 60 
-print ('This {vehicle} is {0}'.format(156, vehicle = "BWM")) # This BWM is 156
-print ('price: {x}, {y}, {z}'.format(x=10, y=20, z=30)) # price: 10, 20, 30
-print ('{:b} binary'.format(21)) # 10101 binary
-print ('{:x} hex'.format(21)) # 15 hex
-print ('{:o} octal'.format(21)) # 25 octal
-print ('{:<20}'.format("left align")) #left align
-print ('{:>20}'.format("right align")) #           right align
-
-# special char
-print (r"c:\number\non") # c:\number\non
-print ("I`am 'V'e'r'y'") # I`am 'V'e'r'y'
-print ("""
-       Help:------------
-               Text here 
-       """) # Help:------------
-            #         Text here
-```
-
+<h1 id="stdoptional">std::optional</h1>
+<ul>
+<li><p>Is not going to dynamic allocation on it's own</p></li>
+<li>optional set the value and call destructor when exit.</li>
+<li><p>not supported by constexpr</p></li>
+</ul>
+<h3 id="example">example:</h3>
+<p>```c++ include <optional></p>
+<p>int main() {<br /> std::optional<int> o{13}; // if init return 13 return o.value_or(2); // else return 2 }</p>
+<p>```</p>
+<h3 id="more-example-from-cppreferance.com">more example from cppreferance.com</h3>
+<p>```c++ #include <string><br />#include <iostream> #include <optional></p>
+<p>std::optional<std::string> create(bool b) { if (b) return &quot;Godzilla&quot;; return {}; }</p>
+<p>auto create2(bool b) { return b ? std::optional<std::string>{&quot;Godzilla&quot;} : std::nullopt; }</p>
+<p>int main() { std::cout &lt;&lt; &quot;create(false) returned&quot; &lt;&lt; create(false).value_or(&quot;empty&quot;) &lt;&lt; ''; if (auto str = create2(true)) { std::cout &lt;&lt; &quot;create2(true) returned &quot; &lt;&lt; *str &lt;&lt; ''; } }</p>
+<pre><code>
+#### Output:
+</code></pre>
+<p>create(false) returned empty create2(true) returned Godzilla ```</p>
