@@ -11,21 +11,21 @@ permalink: /portfolio/
 ##### Development tools: Qt Creator, Visual studio, Anaconda, Pycharm, 
 ##### Debug tools: Valgrind, Gdb.
 ##### Version control:  SVN, Git.
-/
+
 #### Professional Experience
 
 Software Engineer, March/15 to Present - Indusnet Technologies.
-
-    • Design and developed application, microservice and library for an embedded system.
-    • Support clients from requirements analysis through design, coding, testing, debugging, implementation and integration.
-    • Worked on Agile development methodology with JIRA, Redmine project management software.
-    • Used object-oriented principles for class development to streamline efficiency and ensure a scalable and reusable architecture.
-    • Developed cross-platform GUI library using Qt framework, and core library using STL, Poco, Boost framework.
-    • Implemented various design pattern and idiom in core development.
-    • Implemented sockets and multi-thread in application development.
-    • Worked on SVN version controlled system.
-    • Wrote documentation for new and legacy applications.
-
+<ul>
+    <li>• Design and developed application, microservice and library for an embedded system.</li>
+    <li>• Support clients from requirements analysis through design, coding, testing, debugging, implementation and integration.</li>
+    <li>• Worked on Agile development methodology with JIRA, Redmine project management software.</li>
+    <li>• Used object-oriented principles for class development to streamline efficiency and ensure a scalable and reusable architecture.</li>
+    <li>• Developed cross-platform GUI library using Qt framework, and core library using STL, Poco, Boost framework.</li>
+    <li>• Implemented various design pattern and idiom in core development.</li>
+    <li>• Implemented sockets and multi-thread in application development.</li>
+    <li>• Worked on SVN version controlled system.</li>
+    <li>• Wrote documentation for new and legacy applications.</li>
+</ul>
 
 Software Engineer, April/2013 to Feb/2015 – Akas Medical private Ltd.
 
