@@ -3,7 +3,7 @@ layout: page
 title: portfolio
 permalink: /portfolio/
 ---
-
+<!--
 {% for project in site.portfolio %}
 
 {% if project.redirect %}
@@ -45,3 +45,4 @@ permalink: /portfolio/
 {% endif %}
 
 {% endfor %}
+-->
