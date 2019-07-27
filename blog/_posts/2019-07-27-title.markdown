@@ -1,0 +1,55 @@
+---
+layout: post
+title: How-to build poco library in windows
+date: 2019-07-27 15:09:00
+description: an example of build poco library in windows
+---
+
+# How to build poco library in windows
+
+##### poco download link : https://pocoproject.org/download/index.html
+
+#### Error found:
+
+mc.exe not found, to resolve this error just add windows kit path to global.
+
+###### for eg:
+
+​	*C:\Program Files\Windows Kits\10\bin\10.0.15063.0\x86* 
+
+​	add above path in Environment. 
+
+#### Compile:
+
+- Go to poco source folder
+- open msbuild command prompt
+- run **buildwin.cmd** like below
+  - **buildwin.cmd 140 build all both Win32 nosample notest msbuild**
+    - *140* : msvc 2014
+    - *all* : static lib and shared lib
+    - *both*: release and debug
+    - *Win32* : platform
+    - *nosample*: dont build samples
+    - *notest* : dont test
+    - *msbuild* : build method
+
+Usage:
+------
+buildwin VS_VERSION ACTION LINKMODE CONFIGURATION PLATFORM SAMPLES TESTS TOOL
+VS_VERSION:    "90|100|110|120|140|150"
+ACTION:        "build|rebuild|clean"
+LINKMODE:      "static_mt|static_md|shared|all"
+CONFIGURATION: "release|debug|both"
+PLATFORM:      "Win32|x64|WinCE|WEC2013"
+SAMPLES:       "samples|nosamples"
+TESTS:         "tests|notests"
+TOOL:          "devenv|vcexpress|wdexpress|msbuild"
+
+Default is build all.
+
+### Running application:
+
+1. Create new project in visual studio and add header path to **Project->Properties->C/C++-> Additional Include Directories**(eg: If you want to use POCO Foundation, add "C:\poco-1.4.6\Foundation\include")
+2. Add POCO lib path to **Project->Properties-> Linker-> General-> Additional Library Directories.** (eg: C:\poco-1.4.6\lib)
+3. Add POCO lib files names to **Project->Properties->Linker->Input-> Additional Dependencies** (eg: PocoNetd.lib )
+4. Now you can start using POCO libraries in your project.
