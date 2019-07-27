@@ -4,12 +4,14 @@ title: about
 permalink: /about/
 ---
 
-<img class="col one right" src="/img/img.jpg">
+<img class="col one right" src="./img/img.jpg">
 
 <br/>
-    - Innovative software engineer offering six plus years of experience in the full software development lifecycle – from concept through delivery of next-generation applications and customizable solutions.
-    - Expert in advanced development methodologies, tools, and processes contributing to the development and rollout of cutting-edge software applications.
-    - Known for excellent troubleshooting skills, able to analyze code and engineer well-researched, cost-effective and responsive solutions. 
+<ul>
+    <li>- Innovative software engineer offering six plus years of experience in the full software development lifecycle – from concept through delivery of next-generation applications and customizable solutions.</li>
+    <li>- Expert in advanced development methodologies, tools, and processes contributing to the development and rollout of cutting-edge software applications.</li>
+    <li>- Known for excellent troubleshooting skills, able to analyze code and engineer well-researched, cost-effective and responsive solutions.</li>
+</ul>
 <br/>
 <hr/>
 <br/>
