@@ -4,7 +4,7 @@ title: portfolio
 permalink: /portfolio/
 ---
 <br>
-<h2>Key Skills</h2>
+<h4>Key Skills</h4>
 Languages: C, C++, Python.
 Framework: Qt, Poco, Boost
 Technologies: XML, Json, MySQL, Docker, Conan
@@ -12,9 +12,9 @@ Development tools: Qt Creator, Visual studio, Anaconda, Pycharm,
 Debug tools: Valgrind, Gdb.
 Version control:  SVN, Git.
 
-<h2>Professional Experience</h2>
+<h4>Professional Experience</h4>
 
-<h3>Software Engineer, March/15 to Present - Indusnet Technologies.</h3>
+<h6>Software Engineer, March/15 to Present - Indusnet Technologies.</h6>
 <ul>
     <li> Design and developed application, microservice and library for an embedded system.</li>
     <li> Support clients from requirements analysis through design, coding, testing, debugging, implementation and integration.</li>
@@ -27,7 +27,7 @@ Version control:  SVN, Git.
     <li> Wrote documentation for new and legacy applications.</li>
 </ul>
 
-<h3>Software Engineer, April/2013 to Feb/2015 – Akas Medical private Ltd.</h3>
+<h6>Software Engineer, April/2013 to Feb/2015 – Akas Medical private Ltd.</h6>
 <ul>
     <li> Designed and coded application functionality in a real-time embedded.</li>
     <li> Worked on full product development life cycle with Agile development methodology.</li>
