@@ -3,9 +3,8 @@ layout: page
 title: portfolio
 permalink: /portfolio/
 ---
-<br>
 <h4>Key Skills</h4>
-<br><b>Languages:</b> C, C++, Python.<br>
+<b>Languages:</b> C, C++, Python.<br>
 <b>Framework:</b> Qt, Poco, Boost<br>
 <b>Technologies:</b> XML, Json, MySQL, Docker, Conan<br>
 <b>Development tools:</b> Qt Creator, Visual studio, Anaconda, Pycharm, <br>
@@ -39,4 +38,3 @@ permalink: /portfolio/
     <li> Identified and capitalized on code re-use or integration opportunities.</li>
     <li> Worked with network-enabled application programming interface.</li>
 </ul>
-</br>
