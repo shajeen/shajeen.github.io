@@ -3,7 +3,7 @@ layout: page
 title: portfolio
 permalink: /portfolio/
 ---
-
+<br>
 #### Key Skills
 ##### Languages: C, C++, Python.
 ##### Framework: Qt, Poco, Boost
@@ -38,7 +38,7 @@ Software Engineer, April/2013 to Feb/2015 – Akas Medical private Ltd.
     • Worked on Git version controlled system.
     • Identified and capitalized on code re-use or integration opportunities.
     • Worked with network-enabled application programming interface.
-
+</br>
 <!--
 {% for project in site.portfolio %}
 
